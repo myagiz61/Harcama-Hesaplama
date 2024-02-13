@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(80, 75, 75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.heading {
+  color: aqua;
+  text-shadow: 2px 2px 20px aqua;
+  letter-spacing: 3px;
+}
+
+.container {
+  background-color: white;
+  width: 50vw;
+  height: 80vh;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.name-area {
+  align-self: flex-start;
+  font-size: 25px;
+}
+
+.name-area input {
+  border: none;
+  outline: none;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.pay-area {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+}
+
+.form-harcama,
+.form-fiyat {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 30px;
+}
+
+input {
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.add-btn {
+  padding: 10px 40px;
+  background-color: red;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.form-durum {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.toplam {
+  background-color: rgb(0, 35, 35);
+  padding: 10px 40px;
+  border-radius: 10px;
+  color: white;
+  font-size: 21px;
+}
+.toplam span {
+  color: aqua;
+}
+
+/* Liste Kısmı */
+
+.liste {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px;
+  width: 100%;
+  overflow: auto;
+}
+
+.harcama {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  padding: 7px 15px;
+  border-radius: 10px;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.buttons img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.buttons img:nth-child(2) {
+  width: 40px;
+  height: 40px;
+}
+.harcama h2:nth-child(2) {
+  color: red;
+}
+.payed {
+  opacity: 0.7;
+}
+
+.payed h2:nth-child(1) {
+  text-decoration: line-through;
+}
+
+.payed h2:nth-child(2) {
+  color: green;
+}
